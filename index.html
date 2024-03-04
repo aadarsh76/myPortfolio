@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aadarshPortfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(12, 12, 51);
+            color: white;
+            font-family: Poppins;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: Poppins;
+            height: 80px;
+            background-color: rgb(19, 19, 84);
+        }
+
+        .leftHeader {
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            text-align: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(125, 125, 246);
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 90px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            width: 80%;
+            margin: 50px 0;
+            font-size: 2.5rem;
+            font-family: Poppins;
+        }
+
+        .purple {
+            color: rgb(116, 48, 180);
+        }
+
+        .rightSection {
+            width: 80%;
+        }
+
+        #element {
+            color: rgb(116, 48, 180);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 65vh;
+        }
+
+        .textGrey {
+            color: grey;
+        }
+
+        .secondSection h1 {
+            height: 3vw;
+        }
+
+        .secondSection h4 {
+            height: 4vw;
+        }
+
+        .secondSection ul {
+            margin: auto;
+            color: grey;
+
+        }
+
+        .thirdSection {
+            width: 80%;
+            margin: 80px auto;
+            text-align: center;
+        }
+
+        .thirdSection h1 {
+            height: 3vw;
+        }
+
+        .thirdSection h4 {
+            height: 4vw;
+        }
+
+        .thirdSection>div {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px;
+            border: none;
+        }
+
+        .left,
+        .right {
+            flex: 1;
+            border-radius: 20px;
+            border: 2px solid rgb(116, 48, 180);
+            padding: 10px;
+            margin: 33px 6px;
+            text-align: center;
+            font-size: 1.5rem;
+            max-width: 80vw;
+        }
+
+        .left {
+            background-color: rgba(116, 48, 180, 0.1);
+        }
+
+        .right {
+            background-color: rgba(116, 48, 180, 0.1);
+        }
+
+        .skillEdit {
+            list-style: none;
+            font-size: medium;
+        }
+
+        .skillContent {
+            color: grey;
+            font-size: small;
+        }
+
+        /* 
+        .my-projects {
+            max-width: 80vw;
+            margin: auto;
+            height: 65vh;
+        } */
+
+        .my-projects {
+            width: 80%;
+            margin: 80px auto;
+            text-align: center;
+        }
+
+        .my-projects h1 {
+            height: 3vw;
+        }
+
+        .projects-container {
+            height: 35px;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .project-card {
+            width: 25%;
+            height: 1000%;
+            background-color: #091048;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border: 1px solid transparent;
+            border-radius: 2rem;
+            position: relative;
+        }
+
+        .project-card img {
+            width: 50%;
+            height: 100px;
+            object-fit: scale-down;
+            border-radius: 5px;
+            color: rgb(111, 111, 213);
+        }
+
+        .project-card h3,
+        .project-card p {
+            margin-top: 30px;
+        }
+
+        .project-card a {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .project-card a:hover {
+            background-color: #0062cc;
+        }
+
+        .project-card {
+            background-color: #091048;
+            color: white;
+            transition: 0.3s ease-in-out;
+        }
+
+        .project-card:hover {
+            background-color: rgb(12, 12, 51);
+        }
+
+        .contactSection {
+            width: 80%;
+            margin: 475px auto;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contactSection span {
+            width: 80%;
+            margin: 80px auto;
+            text-align: center;
+            color: grey;
+        }
+
+        .contact-form {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 70px;
+            border-radius: 50px;
+            text-align: center;
+        }
+
+        .email {
+            width: 20%;
+            height: 182px;
+            background-color: #091048;
+            margin-top: 90px;
+            margin-left: 40px;
+            /*140 */
+            padding: 20px;
+            border-radius: 5rem;
+            display: block;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .email img {
+            width: 50%;
+            height: 100px;
+            object-fit: scale-down;
+            border-radius: 5px;
+            color: rgb(111, 111, 213);
+        }
+
+        .email h4 {
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        .email a {
+            text-decoration: none;
+        }
+
+        .email a:hover {
+            color: #0062cc;
+        }
+
+        .form {
+            width: 50%;
+            margin: 10px 21px;
+            /*-107*/
+            margin-right: 43px;
+            /*120*/
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #c59ee2;
+            border-radius: 50px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+
+        button:hover {
+            background-color: #0062cc;
+        }
+
+        @media screen and (max-width: 768px) {
+            .contact-form {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+
+        .footer {
+            width: 100%;
+            margin-top: 105px;
+            text-align: center;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #0062cc;
+        }
+
+        .footer h1 {
+            font-weight: normal;
+        }
+
+        .footerContainer {
+            display: flex;
+            margin-top: 20px;
+            margin-left: 610px;
+            gap: 30px;
+        }
+
+        .footer small{
+            margin: auto;
+        }
+
+        .footerContainer img {
+            width: 50%;
+            height: 50px;
+            object-fit: scale-down;
+            border-radius: 5px;
+            display: flex;
+            gap: 10px;
+            color: rgb(111, 111, 213);
+        }
+
+        .infoBtn {
+            display: flex;
+        }
+
+        .dwnldBtn {
+            width: 40%;
+            height: 65px;
+            margin-top: 50px;
+            font-size: large;
+            font-weight: 500;
+            font-family: Poppins;
+            background-color: rgb(12, 12, 51);
+            color: white;
+            padding: 10px 20px;
+            border: 2px solid rgb(116, 48, 180);
+            border-radius: 2rem;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+
+        .dwnldBtn:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="leftHeader">Aadarsh's Portfolio</div>
+        <div class="rightHeader">
+            <ul>
+                <li><a href="/">Home</li></a>
+                <li><a href="#home">About</li></a>
+                <li><a href="#skill">Skills</li></a>
+                <li><a href="#projectT">Projects</li></a>
+                <li><a href="#contactMe">Contact Me</li></a>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftSection">Hello, I'm <span class="purple">Aadarsh</span>
+                <div>A passionate</div>
+                <span id="element"></span>
+                <div>
+                <a href="aadarshResumeN.pdf" download="aadarshResume">
+                    <button class="dwnldBtn" download>Download CV</button>
+                </a>
+            </div>
+            </div>
+            <div>
+                <img src="bg.png" class="rightSection"></img>
+            </div>
+        </section>
+
+        <section class="secondSection" id="experience">
+            <span class="textGrey">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <h4>Software Engineer, Cisco (2022 to 2023)</h4>
+            <ul>
+                <li>Significantly contributed to end-to-end testing and automation of the Cisco Optical Network Planner
+                    tool. Technologies used - Java, Selenium WebDriver, TestNG, Apache Maven, Jenkins Pipeline, Shell
+                    scripting, and Linux to drive success in this endeavor</li>
+                <li> Automated E2E Code Coverage using Jenkins Pipeline. This boosted test coverage beyond 70% for key
+                    test suites, enhancing overall
+                    testing efficiency</li>
+                <li>Key contributions Include enhancing the Selenium framework's library section by Implementing various
+                    Selenium methods.</li>
+                <li>Worked with software development and testing team members to design and develop robust solutions to
+                    meet client requirements for
+                    functionality, scalability, and performance</li>
+                <li>Integrated third-party tools and components into applications</li>
+            </ul>
+        </section>
+        <section class="thirdSection" id="skill">
+            <span class="textGrey">The Experience I have gained</span>
+            <h1>Skills</h1>
+            <div class="skillsContainer">
+                <div class="left">Automation Skills
+                    <ul class="skillEdit">
+                        <li class="1">Selenium WebDriver</li>
+                        <small class="skillContent">Experienced</small>
+                        <li class="3">Apache Jmeter</li>
+                        <small class="skillContent">Intermediate</small>
+                        <li class="5">Rest API Testing</li>
+                        <small class="skillContent">Beginner</small>
+                        <li class="2">TestNG</li>
+                        <small class="skillContent">Intermediate</small>
+                        <li class="4">Postman</li>
+                        <small class="skillContent">Intermediate</small>
+                    </ul>
+                </div>
+                <div class="right">Backend Skills
+                    <ul class="skillEdit">
+                        <li>Spring boot</li>
+                        <small class="skillContent">Intermediate</small>
+                        <li>Java</li>
+                        <small class="skillContent">Experienced</small>
+                        <li>Jenkins</li>
+                        <small class="skillContent">Intermediate</small>
+                        <li>Linux</li>
+                        <small class="skillContent">Intermediate</small>
+                        <li>MySql</li>
+                        <small class="skillContent">Beginner</small>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-projects" id="projectT">
+            <h1>Projects</h1>
+            <div class="projects-container">
+                <div class="project-card">
+                    <img src="image-181.png" alt="Project 1">
+                    <h3>Scalable SpringBoot Microservices</h3>
+                    <p>SpringBoot | Java | SQL</p>
+                    <a href="https://github.com/aadarsh76/SpringMongo/tree/aadarsh76-microservicesConnection">Github</a>
+                </div>
+                <div class="project-card">
+                    <img src="pngegg.png" alt="Project 2">
+                    <h3>Amazon's Automation</h3>
+                    <p>Selenium | TestNg | Jmeter</p>
+                    <a
+                        href="https://github.com/aadarsh76/TestingMethodologies/tree/testingPractices/SimpliPhase2111">GitHub</a>
+                </div>
+                <div class="project-card">
+                    <img src="pngegg (1).png" alt="Project 2">
+                    <h3>Portfolio</h3>
+                    <p>Html | CSS | Javascript</p>
+                    <a href="#">Visit Website</a>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="middle">
+            <span class="textGrey">Get in touch</span>
+        </section> -->
+        <section class="contactSection" id="contactMe">
+            <span class="text-grey">Get in touch</span>
+            <div class="contact-form">
+                <div class="email">
+                    <img src="Email.png" alt="email"></img>
+                    <h4>aadarshsingh76@gmail.com</h4>
+                    <a href="mailto:aadarshsingh76@gmail.com">Send a Mail</a>
+                </div>
+                <div class="form">
+                    <form action="mailto:aadarshsingh76@gmail.com.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <h1>Aadarsh</h1>
+            <div class="footerContainer">
+                <a href="https://www.linkedin.com/in/aadarsh-singh-mertia-66bb6a208/"><img
+                        src="—Pngtree—linkedin white icon_3570423.png" alt="LinkedIn"></img></a>
+                <a href="https://github.com/aadarsh76"><img src="github-logo.png" alt="GitHub"></img></a>
+                <a href="#"><img src="Email.png" alt="email"></a>
+                <a href="aadarshResumeN.pdf" download="aadarshResume"><img src="2725159511543238876-128.png"></img></a>
+            </div>
+            <small>© Aadarsh Singh Mertia. All rightts reserved.</small>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Automation Engineer.', 'Backend Developer.'],
+            typeSpeed: 100,
+        });
+    </script>
+</body>
+
+</html>
