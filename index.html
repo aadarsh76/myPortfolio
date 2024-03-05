@@ -29,6 +29,10 @@
             font-family: Poppins;
             height: 80px;
             background-color: rgb(19, 19, 84);
+            overflow: hidden;
+  position: fixed; 
+  top: 0; 
+  width: 100%;
         }
 
         .leftHeader {
@@ -85,7 +89,7 @@
 
         .secondSection {
             max-width: 80vw;
-            margin: auto;
+            margin: 80px auto;
             height: 65vh;
         }
 
@@ -168,6 +172,7 @@
         .my-projects {
             width: 80%;
             margin: 80px auto;
+            padding-bottom: 1pc;
             text-align: center;
         }
 
@@ -178,7 +183,8 @@
         .projects-container {
             height: 35px;
             margin-top: 50px;
-            margin-bottom: 100px;
+            margin-bottom: 390px;
+            padding-bottom: 10pc;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
@@ -237,7 +243,8 @@
 
         .contactSection {
             width: 80%;
-            margin: 475px auto;
+            margin: auto;
+            margin-top: 50px;
             text-align: center;
             margin-bottom: 20px;
         }
@@ -273,6 +280,7 @@
         }
 
         .email img {
+            max-width: 100%;
             width: 50%;
             height: 100px;
             object-fit: scale-down;
@@ -346,6 +354,78 @@
                 align-items: center;
                 gap: 10px;
             }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            nav ul{
+                flex-direction: row;
+                margin-left: -40px;
+            }
+            nav ul li {
+                width: 80%;
+                margin: -7px 0;
+    padding: 1px;
+    margin-left: 5px;
+            }
+            .main{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  font-size: small;
+}
+
+            .firstSection {
+                flex-direction: column;
+                align-items: normal;
+            }
+
+            .leftSection {
+                width: 90%;
+                text-align: center;
+                margin-left: 40px;
+            }
+            .dwnldBtn {
+                width: 10px;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .rightSection {
+                display: none;
+                /* Hide the image on smaller screens */
+            }
+
+            .secondSection {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                padding-bottom: 20pc;
+            }
+
+            .secondSection h1 {
+                padding-bottom: 33px;
+            }
+
+            .secondSection h4 {
+                padding-bottom: 40px;
+            }
+
+            .thirdSection {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .contactSection {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
         }
 
         .footer {
@@ -368,7 +448,7 @@
             gap: 30px;
         }
 
-        .footer small{
+        .footer small {
             margin: auto;
         }
 
@@ -429,10 +509,10 @@
                 <div>A passionate</div>
                 <span id="element"></span>
                 <div>
-                <a href="aadarshResumeN.pdf" download="aadarshResume">
-                    <button class="dwnldBtn" download>Download CV</button>
-                </a>
-            </div>
+                    <a href="aadarshResumeN.pdf" download="aadarshResume">
+                        <button class="dwnldBtn" download>Download CV</button>
+                    </a>
+                </div>
             </div>
             <div>
                 <img src="bg.png" class="rightSection"></img>
