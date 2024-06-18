@@ -58,6 +58,10 @@
             color: rgb(125, 125, 246);
         }
 
+        nav ul li a[href^="#"] {
+  scroll-behavior: smooth;
+}
+
         .firstSection {
             display: flex;
             justify-content: space-around;
@@ -244,7 +248,7 @@
         .contactSection {
             width: 80%;
             margin: auto;
-            margin-top: 50px;
+            margin-top: 255px;
             text-align: center;
             margin-bottom: 20px;
         }
@@ -488,6 +492,7 @@
             color: black;
         }
     </style>
+    
 </head>
 
 <body>
@@ -496,10 +501,10 @@
         <div class="rightHeader">
             <ul>
                 <li><a href="https://aadarsh76.github.io/myPortfolio/">Home</li></a>
-                <li><a href="#home">About</li></a>
-                <li><a href="#skill">Skills</li></a>
-                <li><a href="#projectT">Projects</li></a>
-                <li><a href="#contactMe">Contact Me</li></a>
+                <li><a href="#home" onclick="scrollToSection('home')">About</li></a>
+                <li><a href="#skill" onclick="scrollToSection('skill')">Skills</li></a>
+                <li><a href="#projectT" onclick="scrollToSection('projectT')">Projects</li></a>
+                <li><a href="#contactMe" onclick="scrollToSection('contactMe')">Contact Me</li></a>
             </ul>
         </div>
     </nav>
@@ -509,7 +514,7 @@
                 <div>A passionate</div>
                 <span id="element"></span>
                 <div>
-                    <a href="aadarshResumeN.pdf" download="aadarshResume">
+                    <a href="SpringDevAadarsh.pdf" download="aadarshResume">
                         <button class="dwnldBtn" download>Download CV</button>
                     </a>
                 </div>
@@ -575,31 +580,36 @@
 
         <section class="my-projects" id="projectT">
             <h1>Projects</h1>
+
             <div class="projects-container">
                 <div class="project-card">
-                    <img src="image-181.png" alt="Project 1">
+                    <img src="Screenshot (20).png" alt="Project 1">
+                    <h3>Chat Application using Websocket</h3>
+                    <p>WebSocket | SpringBoot | Java | Ajax | Javascript</p>
+                    <a
+                        href="https://github.com/aadarsh76/WebSocket-ChatApp">GitHub</a>
+                </div>
+                <div class="project-card">
+                    <img src="image-181.png" alt="Project 2">
                     <h3>Scalable SpringBoot Microservices</h3>
                     <p>SpringBoot | Java | SQL</p>
                     <a href="https://github.com/aadarsh76/SpringMongo/tree/aadarsh76-microservicesConnection">Github</a>
                 </div>
                 <div class="project-card">
-                    <img src="pngegg.png" alt="Project 2">
-                    <h3>Amazon's Automation</h3>
+                    <img src="pngegg.png" alt="Project 3">
+                    <h3>E-commerce's Automation</h3>
                     <p>Selenium | TestNg | Jmeter</p>
                     <a
                         href="https://github.com/aadarsh76/TestingMethodologies/tree/testingPractices/SimpliPhase2111">GitHub</a>
                 </div>
                 <div class="project-card">
-                    <img src="pngegg (1).png" alt="Project 2">
+                    <img src="pngegg (1).png" alt="Project 4">
                     <h3>Portfolio</h3>
                     <p>Html | CSS | Javascript</p>
                     <a href="https://aadarsh76.github.io/myPortfolio/">Visit Website</a>
                 </div>
             </div>
         </section>
-        <!-- <section class="middle">
-            <span class="textGrey">Get in touch</span>
-        </section> -->
         <section class="contactSection" id="contactMe">
             <span class="text-grey">Get in touch</span>
             <div class="contact-form">
@@ -633,8 +643,9 @@
                 <a href="https://www.linkedin.com/in/aadarsh-singh-mertia-66bb6a208/"><img
                         src="—Pngtree—linkedin white icon_3570423.png" alt="LinkedIn"></img></a>
                 <a href="https://github.com/aadarsh76"><img src="github-logo.png" alt="GitHub"></img></a>
-                <a href="#"><img src="Email.png" alt="email"></a>
-                <a href="aadarshResumeN.pdf" download="aadarshResume"><img src="2725159511543238876-128.png"></img></a>
+                <a href="https://www.linkedin.com/pulse/building-real-time-websocket-chat-application-spring-singh-mertia-iv4sc"><img src="Email.png" alt="article"></img></a>
+                <a href="SpringDevAadarsh.pdf" download="aadarshResume"><img src="2725159511543238876-128.png"></img></a>
+                
             </div>
             <small>© Aadarsh Singh Mertia. All rightts reserved.</small>
         </footer>
@@ -646,7 +657,16 @@
             strings: ['Automation Engineer.', 'Backend Developer.'],
             typeSpeed: 100,
         });
+
     </script>
+    <script>
+        function scrollToSection(sectionId) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView();
+    }
+  }
+  </script>
 </body>
 
 </html>
