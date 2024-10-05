@@ -273,9 +273,7 @@
             width: 20%;
             height: 182px;
             background-color: #091048;
-            margin-top: 90px;
-            margin-left: 40px;
-            /*140 */
+            margin: 20px;
             padding: 20px;
             border-radius: 5rem;
             display: block;
@@ -307,9 +305,9 @@
 
         .form {
             width: 50%;
-            margin: 10px 21px;
+            margin: 40px;
             /*-107*/
-            margin-right: 43px;
+            /* margin-right: 43px; */
             /*120*/
         }
 
@@ -387,17 +385,23 @@
                 align-items: normal;
             }
 
+            .firstSection>div {
+                width: 80%;
+            }
+
             .leftSection {
                 width: 90%;
                 text-align: center;
-                margin-left: 40px;
+                margin: 40px;
+                font-size: 1.5rem;
             }
             .dwnldBtn {
-                width: 10px;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-            }
+            width: 118%;
+            height: 65px;
+            margin-top: 61px;
+            font-size: medium;
+            font-weight: 500;
+        }
 
             .rightSection {
                 display: none;
@@ -408,7 +412,9 @@
                 flex-direction: column;
                 align-items: center;
                 gap: 10px;
-                padding-bottom: 20pc;
+                padding-bottom: 1pc;
+                margin: 136px;
+                height: 60vh;
             }
 
             .secondSection h1 {
@@ -420,9 +426,42 @@
             }
 
             .thirdSection {
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
+                width: 58%;
+                margin: 80px auto;
+                text-align: center;
+            }
+
+            .left, .right {
+              flex: 1;
+              border-radius: 20px;
+              border: 2px solid rgb(116, 48, 180);
+              padding: 10px;
+              margin: 33px 6px;
+              text-align: center;
+              font-size: 1rem;
+              max-width: 26vw;
+             }
+
+             .skillEdit {
+                list-style: none;
+                font-size: small;
+                padding-top: 20px;
+            }
+
+            .skillContent{
+                font-size: smaller;
+            }
+
+            .projects-container {
+                height: 35px;
+                margin: 0px 35px;
+                margin-top: 50px;
+                margin-bottom: 400px;
+                padding-bottom: 10pc;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
             }
 
             .contactSection {
@@ -430,6 +469,49 @@
                 align-items: center;
                 gap: 10px;
             }
+
+         .footerContainer {
+            gap: 15px;
+        } 
+
+        .footer small{
+            font-size: x-small;
+        }
+
+.email {
+    height: 182px;
+    background-color: #091048;
+    padding: 20px;
+    border-radius: 5rem;
+    display: block;
+        }
+
+        .email h4,a{
+            font-size: small;
+        }
+
+        .form-group label{
+            font-size: small;
+        }
+
+.project-card h3{
+           font-size: 15px;
+        }
+        .project-card p {
+           font-size: small;
+        }
+        .project-card a {
+            position: absolute;
+            bottom: 15px;
+            right: 0px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: 0.3s ease-in-out;
+        }
+
         }
 
         .footer {
@@ -448,7 +530,7 @@
         .footerContainer {
             display: flex;
             margin-top: 20px;
-            margin-left: 610px;
+            justify-content:center ;
             gap: 30px;
         }
 
@@ -504,7 +586,7 @@
                 <li><a href="#home" onclick="scrollToSection('home')">About</li></a>
                 <li><a href="#skill" onclick="scrollToSection('skill')">Skills</li></a>
                 <li><a href="#projectT" onclick="scrollToSection('projectT')">Projects</li></a>
-                <li><a href="#contactMe" onclick="scrollToSection('contactMe')">Contact Me</li></a>
+                <li><a href="#contactMe" onclick="scrollToSection('contactMe')">Contact</li></a>
             </ul>
         </div>
     </nav>
@@ -514,7 +596,7 @@
                 <div>A passionate</div>
                 <span id="element"></span>
                 <div>
-                    <a href="SpringDevAadarsh.pdf" download="aadarshResume">
+                    <a href="devAadarshUp.pdf" download="aadarshResume">
                         <button class="dwnldBtn" download>Download CV</button>
                     </a>
                 </div>
@@ -584,7 +666,7 @@
             <div class="projects-container">
                 <div class="project-card">
                     <img src="Screenshot (20).png" alt="Project 1">
-                    <h3>Chat Application using Websocket</h3>
+                    <h3>Chat Application</h3>
                     <p>WebSocket | SpringBoot | Java | Ajax | Javascript</p>
                     <a
                         href="https://github.com/aadarsh76/WebSocket-ChatApp">GitHub</a>
@@ -597,7 +679,7 @@
                 </div>
                 <div class="project-card">
                     <img src="pngegg.png" alt="Project 3">
-                    <h3>E-commerce's Automation</h3>
+                    <h3>WebScrapper</h3>
                     <p>Selenium | TestNg | Jmeter</p>
                     <a
                         href="https://github.com/aadarsh76/TestingMethodologies/tree/testingPractices/SimpliPhase2111">GitHub</a>
@@ -644,7 +726,7 @@
                         src="—Pngtree—linkedin white icon_3570423.png" alt="LinkedIn"></img></a>
                 <a href="https://github.com/aadarsh76"><img src="github-logo.png" alt="GitHub"></img></a>
                 <a href="https://www.linkedin.com/pulse/building-real-time-websocket-chat-application-spring-singh-mertia-iv4sc"><img src="Email.png" alt="article"></img></a>
-                <a href="SpringDevAadarsh.pdf" download="aadarshResume"><img src="2725159511543238876-128.png"></img></a>
+                <a href="devAadarshUp.pdf" download="aadarshResume"><img src="2725159511543238876-128.png"></img></a>
                 
             </div>
             <small>© Aadarsh Singh Mertia. All rightts reserved.</small>
@@ -668,5 +750,3 @@
   }
   </script>
 </body>
-
-</html>
