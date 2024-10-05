@@ -365,13 +365,12 @@
 
             nav ul{
                 flex-direction: row;
-                margin-left: -40px;
+                margin: 7px;
             }
             nav ul li {
                 width: 80%;
-                margin: -7px 0;
+                margin: 0px 10px;
     padding: 1px;
-    margin-left: 5px;
             }
             .main{
   display: flex;
@@ -412,9 +411,10 @@
                 flex-direction: column;
                 align-items: center;
                 gap: 10px;
-                padding-bottom: 1pc;
-                margin: 136px;
-                height: 60vh;
+                padding-bottom: 24pc;
+                margin: 40px;
+                height: 25vh;
+                max-width: fit-content;
             }
 
             .secondSection h1 {
@@ -425,9 +425,15 @@
                 padding-bottom: 40px;
             }
 
+            .secondSection ul {
+            margin: 50px auto;
+            color: grey;
+            width: 100%;
+            }
+
             .thirdSection {
-                width: 58%;
-                margin: 80px auto;
+                width: 80%;
+                margin: 40px;
                 text-align: center;
             }
 
@@ -454,14 +460,14 @@
 
             .projects-container {
                 height: 35px;
-                margin: 0px 35px;
+                margin: 0px 10px;
                 margin-top: 50px;
                 margin-bottom: 400px;
                 padding-bottom: 10pc;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 20px;
+                gap: 30px;
             }
 
             .contactSection {
@@ -480,6 +486,7 @@
 
 .email {
     height: 182px;
+    width: 50%;
     background-color: #091048;
     padding: 20px;
     border-radius: 5rem;
@@ -490,8 +497,16 @@
             font-size: small;
         }
 
+        .contact-form{
+            margin: 10px;
+        }
+
         .form-group label{
             font-size: small;
+        }
+
+        .form{
+            width: 100%;
         }
 
 .project-card h3{
@@ -500,6 +515,11 @@
         .project-card p {
            font-size: small;
         }
+
+        .project-card{
+            width: 30%;
+        }
+
         .project-card a {
             position: absolute;
             bottom: 15px;
@@ -553,7 +573,7 @@
         }
 
         .dwnldBtn {
-            width: 40%;
+            width: 50%;
             height: 65px;
             margin-top: 50px;
             font-size: large;
